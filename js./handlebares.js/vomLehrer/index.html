@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Github, Fetch And Handlebars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.5.3/handlebars.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="ziel">
+      <center>Lade...</center>
+    </div>
+  </body>
+  <script type="text/javascript">
+  fetch("https://api.github.com/users/hakt0r")
+  .then( response => response.json() )
+  .then( json =>{
+    console.log(json);
+    var template = Handlebars.compile(`
+    <table class="table striped">
+      <tr> <th>Name</th> <td><b>{{name}}</b></td> </tr>
+      <tr>
+        <th>Login</th>
+        <td><a href="{{html_url}}"><b>{{login}}</b></a></td>
+      </tr>
+      <tr> <th>Biographie</th> <td><b>{{bio}}</b></td> </tr>
+      <tr> <th>Avatar</th> <td><img src="{{avatar_url}}"></td> </tr>
+    </table>`);
+    document.querySelector('.ziel').innerHTML = template(json);
+  })
+  </script>
+</html>

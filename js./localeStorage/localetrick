@@ -1,0 +1,3 @@
+function SET(key,value){ localStorage.setItem(key,JSON.stringify(value)) }
+function GET(key){ return JSON.parse(localStorage.getItem(key)) }
+function DELETE(key){ localStorage.removeItem(key) }

@@ -1,0 +1,40 @@
+so ich kann pullen nur ein datei nicht alles vom github
+git remote -v
+
+git fetch fork
+
+git checkout fork/task/05-mongoose-controllers __tests__
+
+git checkout fork/task/05-mongoose-controllers .github
+
+git checkout fork/task/05-mongoose-controllers jest.config.js
+
+
+///////////////---------------------------------
+
+Feature Banch => Master Branch
+git checkout feature-branch
+git merge -s ours master
+git checkout master
+git merge feature-branch
+
+
+
+GitHub Passwort Merken (1 Stunde)
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+
+Rote linie bei Input wegmachen
+spellcheck="false
+
+
+////////--------------------------
+
+poxuma stipoxabar nstacnel es versian repositoryum
+git push -f
+
+
+///////////////----------------------------
+Mit git eine Datei aus eine andern branch holen (kann lokale Datei überschreiben)
+git checkout [branchname] -- [pfad der datei im anderen branch] (bearbeitet) 

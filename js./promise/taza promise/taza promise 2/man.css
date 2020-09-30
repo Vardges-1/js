@@ -1,0 +1,10 @@
+.alert{
+    color:white;
+    padding: 3em;
+    background:red;
+    position:relative;
+    left:50%;
+    max-width: 50ch;
+    transform:translate(-50%);
+    border-radius: 1em;
+  }

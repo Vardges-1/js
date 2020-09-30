@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h1>Was ist das</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat doloremque placeat non perspiciatis quidem
+            enim ipsa vero molestiae ullam?
+            Voluptatibus tempora maiores est nihil fugit dolorem voluptatum aliquam dolore a!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex recusandae assumenda praesentium error,
+            quo sequi minus sit alias facere tempora nam quis asperiores iusto eligendi vel laboriosam expedita, sint
+            unde!</p>
+    </section>
+
+    <ul>
+        <li>
+            <span>dark</span>
+        </li>
+        <li>
+            <span>light</span>
+
+        </li>
+    </ul>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("ul").click(function () {
+                $("ul").toggleClass("active")
+                $("section").toggleClass("dark")
+            })
+        })
+    </script>
+
+</body>
+
+</html>

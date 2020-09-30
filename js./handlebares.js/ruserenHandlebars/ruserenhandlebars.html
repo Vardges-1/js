@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.5.3/handlebars.js"></script>
+</head>
+
+<body>
+
+    <script id="blocks" type="text/x-handlebars-template">
+            <div class="item well">
+                {{#each blocks}}
+                    <h3>{{blockName}}</h3>
+                    <ul>
+                        {{#each links}}
+                        <li> <a href="{{href}}">{{title}}</a>{{description}} </li>
+                        {{/each}}
+                    </ul>
+                    {{/each}}
+                </div>
+          </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

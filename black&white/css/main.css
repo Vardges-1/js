@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    /*dark theme*/
+    --dark-page-bg: #111;
+    --dark-header-bg: #232323;
+
+    /* light theme */
+    --light-page-bg: #888484;
+    --light-head-bg: rgb(185, 182, 182);
+}
+
+
+body {
+    --page-bg: var(--light-page-bg);
+    --head-bg: var(--light-head-bg);
+
+}
+
+body.dark {
+    --page-bg: var(--dark-page-bg);
+    --head-bg: var(--dark-header-bg);
+}
+
+
+
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--head-bg);
+
+}
+
+.logo {
+    width: 4rem;
+    margin: 1rem;
+
+}
+
+.logo .nkar {
+    width: 100%;
+}
+
+.navi ul li {
+    display: inline-block;
+    padding: 2rem;
+
+}
+
+.switch {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transform: translate(-50%, -50%);
+
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+input[type="checkbox"]:checked {
+    background: #03a9f4;
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+input[type="checkbox"]:checked:before {
+    left: 40px;
+}
+
+
+
+.mek {
+    border-bottom: 1px solid gray;
+}
+
+.main {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    background: var(--head-bg);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+    width: 100%;
+
+}
+
+.main div {
+    width: 15rem;
+    height: 8rem;
+    background: var(--page-bg);
+}

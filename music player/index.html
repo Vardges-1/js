@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container center">
+        <div class="outer center">
+            <img class="pic" src="img/childish-gambino.png">
+            <svg id="progress">2 Circles here</svg>
+
+            <div class="inner">
+                <div class="control" id="reverse">
+                    <img src="img/forward.svg" alt="forward" style="transform: rotate(180deg)">
+                </div>
+                <div class="button" id="play" onclick="play(this)">
+                    <img class="play" src="img/play.svg">
+                    <img class="play" src="img/pause.svg">
+                </div>
+                <div class="control" id="forward">
+                    <img src="img/forward.svg" alt="forward">
+                </div>
+
+            </div>
+            <div class="now-playing">
+                <p><b>Summertime Magic</b> -Childish Gambino </p>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDevitation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="martrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+
+
+</body>
+
+</html>

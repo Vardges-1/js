@@ -1,0 +1,35 @@
+// Ein einfacher Promise: sleep
+// setTimeout 'resolved' nach einer Sekunde den Promise
+function sleep(){
+    return new Promise(
+        (resolve,reject) => {
+            // resolve([optionales Ergebnis])
+            //   => Unser Versprechen wurde Erfuellt
+            // reject([optionale Fehlermeldung])
+            //   => Unser Versprechen wurde gebrochen
+            setTimeout(
+                ()=>{ resolve() },
+                1000
+            )
+        }
+    )
+}
+​
+// Passiert sofort
+console.log('davor')
+​
+// Das hier wird quasi in den Hintergrund geschaltet
+sleep()
+.then(e=>{
+    console.log('thenn-davor')
+})
+.catch(e=>{
+    console.log('chatch')
+})
+.then(e=>{
+    console.log('thenn-danach')
+})
+​
+// Passiert sofort nach console.log('davor')
+// weil unser sleep block in den Hintergrund geschaltet wurde
+console.log('danach')

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.5.3/handlebars.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="content"></section>
+
+    <script id="people-template" type="text/template">
+
+   <h1>{{bold title}}</h1>
+
+
+   {{#list people}}
+   <h1>{{name}}</h1>
+   <div>{{email
+       }}</div>
+
+   {{/list}}
+
+
+
+
+  {{!--  <ul class="people"></ul>
+    {{#people}}
+    <li class="person">
+        <h3>{{name}}</h3>
+        <div>Age:{{age}}</div>
+        <a href="mailto:{{email}}">Content</a>
+        </li>
+        {{/people}}    
+        </ul> --}}
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

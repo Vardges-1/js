@@ -1,0 +1,227 @@
+* {
+  font-family: 'Lato', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-header {
+  background: url("../img/nkar.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.section-header .section-inner {
+  height: 80vh;
+  position: relative;
+  z-index: 10;
+  display: -ms-grid;
+  display: grid;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 29, 41, 0.6);
+}
+
+.section-header-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.section-header-logo h1 {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  color: #f0ecec;
+}
+
+.section-header-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-header-wraper {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+}
+
+.section-header-wraper__title, .section-header-wraper__subtitle {
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.section-header-wraper__title {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.section-header-wraper__subtitle {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 auto 3.4rem;
+  color: white;
+}
+
+.section-header-wraper__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.section-header-wraper__form-input {
+  padding-right: 2.6rem;
+}
+
+.section-header-wraper__form-input input {
+  font-size: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border-radius: 4px;
+}
+
+.section-header-wraper__form-input input::-webkit-input-placeholder {
+  color: white;
+}
+
+.section-header-wraper__form-input input:-ms-input-placeholder {
+  color: white;
+}
+
+.section-header-wraper__form-input input::-ms-input-placeholder {
+  color: white;
+}
+
+.section-header-wraper__form-input input::placeholder {
+  color: white;
+}
+
+.section-header-wraper__form-button {
+  padding-left: 2rem;
+}
+
+.section-header-wraper__form-button button {
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#fe985b), to(#fe4fa7));
+  background: linear-gradient(to right, #fe985b, #fe4fa7);
+  color: #fff;
+}
+
+.section-promo {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.section-promo .section-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.section-promo1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.section-promo1__content {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  text-align: left;
+}
+
+.section-promo1__content .title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.section-promo1__content .subtitle {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-promo1__content .text {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  color: #414141;
+  margin-bottom: 1rem;
+}
+
+.section-promo1__video {
+  width: 100%;
+}
+
+.section-promo2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding-top: 6rem;
+  margin-top: 8rem;
+  border-top: 1px solid #9491919c;
+}
+
+.section-promo2__item {
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.section-promo2__item .icon {
+  margin-bottom: 1.3rem;
+}
+
+.section-promo2__item .icon .fa-lightbulb {
+  font-size: 2rem;
+  color: red;
+}
+
+.section-promo2__item .title {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-promo2__item .content {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <% include blocks/header.ejs %>
+    <div>
+    <h2>Novostnaya stranica s ID - <%= newsId %></h2>
+    <h3><p>Title</p><%= obj.title %><%= obj.kod %></h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia culpa tenetur,
+ aspernatur sapiente minus quia voluptas unde? Sed rerum perspiciatis corporis non reprehenderit voluptatibus repellat veniam,
+ expedita accusantium vero! Excepturi?</p>
+ <ul>
+     <% obj.paragrafs.forEach(function(item) { %>
+         <li><%= item %></li>
+     <% }); %>
+ </ul>
+ </div>
+</body>
+</html>

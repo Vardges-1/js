@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+    <style type="text/css">
+        .redText {
+            color: red;
+        }
+
+        .blueText {
+            color: blue;
+        }
+
+        .greenText {
+            color: green;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+
+<body>
+
+
+    <div id="quoteData"></div>
+
+    <script id="quote-template" type="text/x-handlebars-template">
+
+        <h3>Favorite {{Name}}  Quotes</h3>
+       <ol>
+        {{#each quotes}}
+        <li>{{quote}}
+            {{/each}}
+       </ol>
+       {{{yogiBio}}}<br/>
+       {{makeLink "lorem ipsum link" "https://loremipsum.de/"}}
+       {{changeColor "Make my text red" color="red"}}
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        var quoteInfo = document.getElementById("quote-template").innerHTML;
+        var template = Handlebars.compile(quoteInfo);
+
+        Handlebars.registerHelper("makeLink", function (text, url) {
+            text = Handlebars.Utils.escapeExpression(text);
+            url = Handlebars.Utils.escapeExpression(url);
+
+            var theLink = '<a href="' + url + '">' + text + '</a>';
+            return new Handlebars.SafeString(theLink);
+        });
+
+        Handlebars.registerHelper("changeColor", function (text, options) {
+            text = Handlebars.Utils.escapeExpression(text);
+
+
+            if (options.hash.color === "red") {
+                return new Handlebars.SafeString("<span class='redText'>" +
+                    text + "</span>");
+            } else if (options.hash.color === "blue") {
+                return new Handlebars.SafeString("<span class='blueText'>" +
+                    text + "</span>");
+            } else {
+                return new Handlebars.SafeString("<span class='greenText'>" +
+                    text + "</span>");
+            }
+        })
+
+        var quoteData = template({
+            name: "Yogi Bera",
+            quotes: [
+                { quote: "lorem ipsum" },
+                { quote: "lorem ipsum" },
+                { quote: "lorem ipsum" },
+                { quote: "lorem ipsum" }
+            ],
+
+            yogiBio: "<i> lorem ipsum aper</i>"
+
+        });
+
+
+
+
+        document.getElementById("quoteData").innerHTML += quoteData;
+
+
+    </script>
+
+</body>
+
+</html>

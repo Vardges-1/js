@@ -1,0 +1,41 @@
+node.js hamar zip file stexcelu dzev@-----
+https://nodejs.org/dist/latest/docs/api/zlib.html#zlib_zlib
+
+-----------------------------
+
+node.js nkar dzevapoxelu u tverov ban stanalu hamar npm u seite bacatrutyunov (asciify) ------
+https://www.npmjs.com/package/asciify-image
+
+------------------------------------
+
+es petqa vor nkarner@ convert anenq formatic format orinak png-favicon.ico--------------
+sudo apt install imagemagick
+
+
+---------------------------------------------
+
+
+CSS медиа-функции orientation poxuma ej@ css disegina ekrani dzev@ poxeluc dizayn karanq anenq
+
+body {
+  display: flex;
+}
+
+div {
+  background: yellow;
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+
+---------------------------------------------------------------

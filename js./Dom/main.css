@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#esho{
+   border-radius: 50px;
+}
+.block {
+    width: 5rem;
+    height: 6rem;
+    border: 1px solid red;
+    margin: 2rem;
+    transition: .09s;
+}
+.block.target{
+    box-shadow: 5px 3px 4px 5px black inset;
+}
+
+.container {
+    width: 5rem;
+    height: 6rem;
+    margin: 2rem;
+    border: 1px solid red;
+}
